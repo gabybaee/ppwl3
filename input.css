@@ -1,1 +1,20 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .tab-item {
+    @apply px-4 py-2 text-sm font-medium border-b-2 transition;
+  }
+
+  .tab-active {
+    @apply border-pink-500 text-pink-600;
+  }
+
+  .tab-inactive {
+    @apply border-transparent text-gray-500 hover:text-pink-600 hover:border-pink-300;
+  }
+
+}
