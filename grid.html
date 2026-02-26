@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <title>Praktikum 6 - Grid</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="grid grid-cols-1 md:grid-cols-3 h-screen bg-white dark:bg-sky-900">
+
+    <div class="bg-blue-500 flex items-center justify-center text-white text-2xl">
+      Item 1
+    </div>
+
+    <div class="bg-red-500 flex items-center justify-center text-white text-2xl">
+      Item 2
+      <button class="mt-4 font-extrabold bg-blue-400 text-white p-5
+                    hover:bg-blue-600
+                    active:bg-blue-800
+                    focus:bg-black focus:text-white
+                    dark:bg-red-100 dark:text-black">
+        Focus on me
+      </button>
+    </div>
+
+    <div class="bg-green-500 flex items-center justify-center text-white text-2xl">
+      Item 3
+    </div>
+
+  </div>
+</body>
+</html>
